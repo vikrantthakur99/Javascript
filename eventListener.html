@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Events</title>
+</head>
+
+<body>
+    <div class="conatainer">
+        <h1>Anime is all About in my list</h1>
+        <p>Click on the button to know which anime I am watching right now</p>
+    </div>
+    <button id="btn" onclick="data()">Check Me</button>
+    <p id = "para"></p>  
+    <script>
+        function data() {
+            let para = document.getElementById('para');
+            let btn = document.getElementById('btn'); 
+
+            document.getElementById("para").innerHTML ="Demon Slayer: Kimetsu no Yaiba is my current ongoing";
+        }
+    </script>
+</body>
+</html> 
